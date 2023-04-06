@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  {% load static %}
+<head>
+  <meta charset="utf-8">
+  <title>Classack</title>
+  <style media="screen">
+    body{
+      background-image: url('{% static "/hp2.jpeg" %}');
+    }
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      {% comment %} background-image: url('{% static "lp1.jpg" %}'); {% endcomment %}
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0px;
+    }
+  </style>
+
+</head>
+
+<body>
+  {% include "navbar.html" %}
+  {% block content %}
+  {% endblock content %}
+</body>
+
+</html>

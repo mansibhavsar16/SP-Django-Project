@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Classack</title>
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image : url('{% static "hp2.jpeg"%}');
+      {% comment %} background-image: url('{% static "hp.jpg" %}'); {% endcomment %}
+      background-size: cover;
+      {% comment %} background-repeat: no-repeat; {% endcomment %}
+      height : 580px;      
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+      color:black;
+    }
+
+    .alert {
+      margin: 0px;
+    }
+
+   
+  </style>
+
+</head>
+
+<body>
+  {% include "navbar.html" %}
+  <br>
+  <br>
+  <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+    <br>
+    <h1 class="display-4 ">Welcome</h1>
+
+    <br><br>
+    <p style="text-align:center;color:black;">To Online Classroom</p>
+    <br><br><br><br><br>
+   
+    <br><br>
+  </div>
+
+  <br>
+  <br>
+  <br><br>
+
+  
+</body>
+
+</html>
